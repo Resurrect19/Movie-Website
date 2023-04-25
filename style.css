@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+:root{
+    /* --------------font----------------- */
+    --primary-font: 'Bebas Neue', cursive;
+    --secondary-font:'Open Sans', sans-serif;
+    --third-font: 'Montserrat', sans-serif;
+
+/* -----------color----------------------- */
+    --primary-color: #212121;
+    --secondary-color: #424242;
+    --dark-red: #B71c1c;
+    --red-palette: #ff8480;
+    --dark-blue: #1a237e;
+    --blue-palette: #8c9eff;
+    --dark-yellow: #ffff00;
+    --yellow-palette: #ffff8d;
+
+/* --------------other things---------------- */
+--transition: .5s ease;
+--border-radius: 3rem;
+
+}
+
+html{
+    font-size: 75%;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--primary-color);
+    height: 300vh;
+}
+:focus-visible{
+    outline-color: var(--blue-palette);
+}
+::-webkit-scrollbar{
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--secondary-color);
+    border-radius: var(--border-radius);
+}
