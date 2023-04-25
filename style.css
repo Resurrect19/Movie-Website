@@ -4,6 +4,8 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
+    border: none;
+    outline: none;
 }
 :root{
     /* --------------font----------------- */
@@ -12,7 +14,7 @@
     --third-font: 'Montserrat', sans-serif;
 
 /* -----------color----------------------- */
-    --primary-color: #212121;
+    --primary-color: #171717;
     --secondary-color: #424242;
     --dark-red: #B71c1c;
     --red-palette: #ff8480;
@@ -20,19 +22,34 @@
     --blue-palette: #8c9eff;
     --dark-yellow: #ffff00;
     --yellow-palette: #ffff8d;
+    --light-color: #E4DCCF;
 
 /* --------------other things---------------- */
 --transition: .5s ease;
 --border-radius: 3rem;
 
 }
-
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3rem;
+}
+h3{
+    font-size: 2rem;
+}
+sub{
+    color: var(--dark-red);
+    font-size: 4.6rem;
+}
 html{
     font-size: 75%;
     scroll-behavior: smooth;
 }
 body{
     background-color: var(--primary-color);
+    color: var(--light-color);
+    font-family: var(--primary-font);
     height: 300vh;
 }
 :focus-visible{
@@ -43,6 +60,45 @@ body{
     height: 8px;
 }
 ::-webkit-scrollbar-thumb{
-    background-color: var(--secondary-color);
+    background-color: var(--light-color);
     border-radius: var(--border-radius);
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 15%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.logo h2{ 
+    font-size: 3.4rem;
+    letter-spacing: 1.5px;
+    margin-right: .6rem;
+    color: var(--blue-palette);
+}
+.search-box{
+    background-color: var(--secondary-color);
+    padding: .7rem 1.3rem;
+    font-size: 1.5rem;
+    border-radius: var(--border-radius);
+    color: var(--blue-palette);
+    box-shadow: 0 0 1rem var(--blue-palette);
+
+}
+#search-field{
+    background: transparent;
+    padding: .5rem 1.5rem;
+    font-size: 1.5rem;
+    color: var(--light-color);
+}
+#search-field , .fa-solid{
+    padding: .5rem;
+}
+.menu-box{
+    font-size: 2rem;
+    color: var(--blue-palette);     
+    display: none;              
 }
