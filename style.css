@@ -76,7 +76,7 @@ body{
 .logo h2{ 
     font-size: 3.4rem;
     letter-spacing: 1.5px;
-    margin-right: .6rem;
+    margin-right: 1rem;
     color: var(--blue-palette);
 }
 .search-box{
@@ -95,10 +95,21 @@ body{
     color: var(--light-color);
 }
 #search-field , .fa-solid{
-    padding: .5rem;
+    padding: .8rem;
 }
 .menu-box{
     font-size: 2rem;
     color: var(--blue-palette);     
     display: none;              
+}
+.sidebar{
+    position: absolute;
+    top: 10rem;
+    left: 0;
+    bottom: 0;
+    max-width: 19rem;
+    width: 100%;
+    overflow-y: overlay;
+    z-index: 4;
+    background-color: var(--secondary-color);
 }
